@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="141.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="multi12_Name" layoutX="144.0" layoutY="30.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="multi12_Command" layoutX="144.0" layoutY="67.0" prefHeight="25.0" prefWidth="201.0" />
+      <Label layoutX="74.0" layoutY="34.0" text="NAME" textFill="#6106e1" />
+      <Label layoutX="47.0" layoutY="71.0" prefHeight="17.0" prefWidth="73.0" text="COMMAND" textFill="#f20000" />
+   </children>
+</AnchorPane>

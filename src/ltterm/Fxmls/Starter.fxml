@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="635.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ltterm.FXMLController">
+    <children>
+        <Button fx:id="serial_btn" layoutX="31.0" layoutY="82.0" onAction="#handleSerialButon" prefHeight="63.0" prefWidth="81.0" text="Connect" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="82.0" />
+      <TextField fx:id="speed" layoutX="55.0" layoutY="41.0" prefHeight="17.0" prefWidth="81.0" text="9600" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="41.0" />
+      <Label fx:id="PortL" layoutX="12.0" layoutY="14.0" prefHeight="17.0" prefWidth="33.0" text="PORT" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="14.0" />
+      <Label layoutX="14.0" layoutY="45.0" prefHeight="17.0" prefWidth="41.0" text="SPEED" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0" />
+      <TextArea fx:id="textArea" layoutX="368.0" layoutY="3.0" prefHeight="547.0" prefWidth="450.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="368.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+      <TextField fx:id="input" layoutX="368.0" layoutY="552.0" prefHeight="46.0" prefWidth="443.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="368.0" AnchorPane.rightAnchor="1.0" />
+      <ComboBox fx:id="port" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="81.0" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="10.0" />
+      <Separator layoutX="2.0" layoutY="79.0" prefHeight="4.0" prefWidth="356.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="79.0" />
+      <Separator layoutX="352.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="605.0" prefWidth="9.0" AnchorPane.leftAnchor="352.0" AnchorPane.topAnchor="-3.0" />
+      <Button fx:id="select_btn" layoutX="154.0" layoutY="41.0" mnemonicParsing="false" onAction="#choseDirectory" prefHeight="25.0" prefWidth="52.0" text="Select" AnchorPane.leftAnchor="154.0" AnchorPane.topAnchor="41.0" />
+      <TextField fx:id="directoy_show" layoutX="199.0" layoutY="41.0" prefHeight="25.0" prefWidth="128.0" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="41.0" />
+      <Button fx:id="excel_btn" layoutX="220.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleExcel" text="Excel" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="liveChart" layoutX="275.0" layoutY="10.0" mnemonicParsing="false" onAction="#liveChartButn" prefHeight="25.0" prefWidth="52.0" text="Chart" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="10.0" />
+      <Button fx:id="multi_1" layoutX="15.0" layoutY="220.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="220.0" />
+      <Button fx:id="countdwn_btn1" layoutX="18.0" layoutY="174.0" mnemonicParsing="false" onAction="#count1Down" prefHeight="25.0" prefWidth="52.0" text="Down" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="174.0" />
+      <Button fx:id="countup_btn1" layoutX="83.0" layoutY="174.0" mnemonicParsing="false" onAction="#count1Up" prefHeight="25.0" prefWidth="52.0" text="Up" AnchorPane.leftAnchor="83.0" AnchorPane.topAnchor="174.0" />
+      <TextField fx:id="count1text" layoutX="18.0" layoutY="149.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="149.0" />
+      <Button fx:id="run_1" layoutX="307.0" layoutY="575.0" mnemonicParsing="false" onAction="#SystemCallButton_1" prefHeight="25.0" prefWidth="41.0" text="RUN" textFill="#0a4aeb" AnchorPane.leftAnchor="305.0" AnchorPane.topAnchor="497.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <TextField fx:id="system_call_text2" layoutX="105.0" layoutY="575.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="537.0" />
+      <Separator layoutX="6.0" layoutY="145.0" prefHeight="4.0" prefWidth="356.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="145.0" />
+      <Button fx:id="setting_btn" layoutX="155.0" layoutY="10.0" mnemonicParsing="false" onAction="#Settings" prefHeight="25.0" prefWidth="58.0" text="Setting" AnchorPane.leftAnchor="155.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="140.0" layoutY="88.0" prefHeight="17.0" prefWidth="28.0" text="Date" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="88.0" />
+      <Label layoutX="138.0" layoutY="121.0" text="Epoch" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="121.0" />
+      <TextField layoutX="178.0" layoutY="84.0" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="84.0" />
+      <TextField layoutX="178.0" layoutY="117.0" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="117.0" />
+      <Button fx:id="multi_2" layoutX="15.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_2" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="262.0" />
+      <TextField fx:id="count2text" layoutX="171.0" layoutY="149.0" prefHeight="25.0" prefWidth="120.0" AnchorPane.leftAnchor="171.0" AnchorPane.topAnchor="149.0" />
+      <Button fx:id="countdwn_btn2" layoutX="173.0" layoutY="174.0" mnemonicParsing="false" onAction="#count2Down" prefHeight="25.0" prefWidth="52.0" text="Down" AnchorPane.leftAnchor="173.0" AnchorPane.topAnchor="174.0" />
+      <Button fx:id="countup_btn2" layoutX="237.0" layoutY="174.0" mnemonicParsing="false" onAction="#count2Up" prefHeight="25.0" prefWidth="52.0" text="Up" AnchorPane.leftAnchor="237.0" AnchorPane.topAnchor="174.0" />
+      <Separator layoutX="2.0" layoutY="208.0" prefHeight="4.0" prefWidth="356.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="208.0" />
+      <Button fx:id="multi_4" layoutX="15.0" layoutY="349.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_4" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="349.0" />
+      <Button fx:id="multi_3" layoutX="15.0" layoutY="305.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_3" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="305.0" />
+      <Button fx:id="multi_6" layoutX="15.0" layoutY="443.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_6" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="443.0" />
+      <Button fx:id="multi_5" layoutX="15.0" layoutY="396.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_5" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="396.0" />
+      <Button fx:id="multi_7" layoutX="140.0" layoutY="220.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_7" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="220.0" />
+      <Button fx:id="multi_8" layoutX="138.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_8" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="262.0" />
+      <TextField fx:id="run2_t" layoutX="11.0" layoutY="537.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="537.0" />
+      <TextField fx:id="run1_t" layoutX="11.0" layoutY="497.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="497.0" />
+      <TextField fx:id="run3_t" layoutX="11.0" layoutY="575.0" prefHeight="25.0" prefWidth="90.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="575.0" />
+      <TextField fx:id="system_call_text1" layoutX="105.0" layoutY="497.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="497.0" />
+      <TextField fx:id="system_call_text3" layoutX="105.0" layoutY="575.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="575.0" />
+      <Separator layoutY="483.0" prefHeight="4.0" prefWidth="356.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="483.0" />
+      <Button fx:id="run_3" layoutX="307.0" layoutY="575.0" mnemonicParsing="false" onAction="#SystemCallButton_3" prefHeight="25.0" prefWidth="41.0" text="RUN" textFill="#0a4aeb" AnchorPane.leftAnchor="307.0" AnchorPane.topAnchor="575.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="run_2" layoutX="307.0" layoutY="537.0" mnemonicParsing="false" onAction="#SystemCallButton_2" prefHeight="25.0" prefWidth="41.0" text="RUN" textFill="#0a4aeb" AnchorPane.leftAnchor="307.0" AnchorPane.topAnchor="537.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="multi_10" layoutX="138.0" layoutY="349.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_10" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="349.0" />
+      <Button fx:id="multi_11" layoutX="140.0" layoutY="396.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_11" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="396.0" />
+      <Button fx:id="multi_9" layoutX="144.0" layoutY="305.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_9" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="305.0" />
+      <Button fx:id="multi_12" layoutX="144.0" layoutY="443.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_12" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="443.0" />
+      <Button fx:id="multi_13" layoutX="275.0" layoutY="220.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_13" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="220.0" />
+      <Button fx:id="multi_14" layoutX="273.0" layoutY="262.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_14" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="262.0" />
+      <Button fx:id="multi_15" layoutX="275.0" layoutY="305.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_15" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="305.0" />
+      <Button fx:id="multi_16" layoutX="275.0" layoutY="349.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_16" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="349.0" />
+      <Button fx:id="multi_17" layoutX="273.0" layoutY="396.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_17" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="396.0" />
+      <Button fx:id="multi_18" layoutX="275.0" layoutY="443.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Multi_18" AnchorPane.leftAnchor="265.0" AnchorPane.topAnchor="443.0" />
+      <Separator layoutX="151.0" layoutY="147.0" orientation="VERTICAL" prefHeight="63.0" prefWidth="0.0" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="147.0" />
+      <Button fx:id="log_btn" layoutX="302.0" layoutY="149.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="52.0" text="Log" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="152.0" />
+      <Separator layoutX="291.0" layoutY="147.0" orientation="VERTICAL" prefHeight="63.0" prefWidth="0.0" AnchorPane.leftAnchor="293.0" AnchorPane.topAnchor="147.0" />
+    </children>
+</AnchorPane>

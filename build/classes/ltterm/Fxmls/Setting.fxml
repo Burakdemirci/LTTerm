@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane1" fx:id="anchor_Setting" prefHeight="149.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ltterm.FXMLController">
+    <children>
+    
+      <ComboBox fx:id="parity" layoutX="389.0" layoutY="52.0" prefHeight="25.0" prefWidth="106.0" promptText="NONE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="52.0" />
+      <ComboBox fx:id="stop" layoutX="105.0" layoutY="13.0" prefHeight="25.0" prefWidth="50.0" promptText="1" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="13.0" />
+      <ComboBox fx:id="data" layoutX="105.0" layoutY="54.0" prefHeight="25.0" prefWidth="41.0" promptText="8" AnchorPane.rightAnchor="323.0" AnchorPane.topAnchor="54.0" />
+      <ComboBox fx:id="flowControl" layoutX="389.0" layoutY="13.0" prefHeight="25.0" prefWidth="106.0" promptText="NONE" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="13.0" />
+      <Label layoutX="311.0" layoutY="58.0" prefHeight="17.0" prefWidth="69.0" text="Parity" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="58.0" />
+      <Label layoutX="48.0" layoutY="56.0" prefHeight="17.0" prefWidth="33.0" text="Data" AnchorPane.rightAnchor="397.0" AnchorPane.topAnchor="56.0" />
+      <Label layoutX="48.0" layoutY="17.0" prefHeight="17.0" prefWidth="41.0" text="Stop" AnchorPane.rightAnchor="389.0" AnchorPane.topAnchor="17.0" />
+      <Label layoutX="305.0" layoutY="19.0" prefHeight="17.0" prefWidth="81.0" text="Flow Control" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="19.0" />
+      <Button fx:id="dsr_btn" layoutX="234.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleDSRButon" text="DSR" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="15.0" />
+      <Button fx:id="dtr_btn" layoutX="234.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleDTRButon" text="DTR" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="54.0" />
+     
+      <Separator layoutX="214.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="5.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="297.0" orientation="VERTICAL" prefHeight="88.0" prefWidth="0.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="0.0" />
+
+    </children>
+</AnchorPane>
